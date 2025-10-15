@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ya Roohi 💖</title>
+
+  <style>
+    @keyframes stars {
+      from {background-position: 0 0;}
+      to {background-position: -10000px 5000px;}
+    }
+    @keyframes fadeIn {
+      from {opacity: 0; transform: translateY(20px);}
+      to {opacity: 1; transform: translateY(0);}
+    }
+
+    body {
+      margin: 0;
+      height: 100vh;
+      color: #fff;
+      background: radial-gradient(circle at bottom, #250000 0%, #000 100%);
+      overflow: hidden;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    /* Floating star effect */
+    body::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 200%;
+      height: 200%;
+      background: transparent url('https://raw.githubusercontent.com/JulianLaval/canvas-particle-network/master/img/particle.png') repeat;
+      animation: stars 200s linear infinite;
+      opacity: 0.2;
+    }
+
+    .card {
+      position: relative;
+      z-index: 1;
+      background: rgba(255, 255, 255, 0.1);
+      border-radius: 25px;
+      padding: 40px 30px;
+      max-width: 420px;
+      backdrop-filter: blur(8px);
+      box-shadow: 0 0 30px rgba(255, 0, 0, 0.4);
+      animation: fadeIn 2.5s ease;
+    }
+
+    h2 {
+      color: #ff6b81;
+      font-size: 2em;
+      margin-bottom: 20px;
+    }
+
+    p {
+      line-height: 1.6;
+      font-size: 1.1em;
+      color: #ffd6d6;
+    }
+
+    .footer {
+      margin-top: 25px;
+      color: #ff9eb5;
+      font-style: italic;
+    }
+
+    audio {
+      display: none;
+    }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <h2>Ya Roohi 🌹</h2>
+    <p>
+      My baby, Your love feels like calm fire at midnight — warm, endless, and true.<br><br>
+      You’ve become the heartbeat in my quiet nights, the voice my soul listens for💐.<br><br>
+      Every second with you paints my world in softer reds and deeper dreams, i really know i cant do without you and vice versa🙂‍↔️.<br><br>
+      You are, and will always be… my peace, my passion, my soul. 💖
+    </p>
+    <div class="footer">— From Musty ❤️</div>
+  </div>
+
+  <!-- Background instrumental (safe placeholder link) -->
+  <audio autoplay loop>
+    <source src="https://cdn.pixabay.com/download/audio/2023/04/13/audio_7e6e1ed8c8.mp3?filename=romantic-vibe-144708.mp3" type="audio/mpeg">
+  </audio>
+</body>
+</html>
